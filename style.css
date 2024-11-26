@@ -24,26 +24,28 @@ a{
 }
 
 .menubtn{
-  display: none;
- 
+ display: none;
     background-color:transparent;
     width: 45px;
     height: 45px;
     border: none;
     position: relative;
     float: right;
+    margin-top: -45px;
 }
 
 .menuicon{
     width: 20px;
     height: 5px;
     position: absolute;
-    background-color: white;
+    text-align: center;
+   background-color: white;
 }
 
 .menuicon::before{
     width: 20px;
     height: 5px;
+    text-align: center;
     position: absolute;
     background-color: white;
 }
@@ -52,6 +54,8 @@ a{
     width: 20px;
     height: 5px;
     position: absolute;
+    text-align: center;
+
     background-color: white;
 
 }
@@ -73,7 +77,12 @@ a{
     text-decoration: none;
 }
 
-
+.dv{
+    background-color: rgb(173, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+}
 
 .di{
     background-color: rgb(173, 0, 0);
@@ -92,37 +101,14 @@ a{
     object-fit: contain;
     position: relative;
     display: block;
+   
     
-}
-
-.bb{
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 250px;
-    color: rgb(122, 121, 121);
-}
-
-.vv{
-    font-size: 30px;
-    text-align: center;
-    white-space: nowrap;
-    line-height: 1.5;
-}
-
-.lol{
-   text-align: center;
-   word-spacing: 3px;
-   line-height:1.5 ;
-
 }
 
 .head{
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-    color: white;
     background-color: black;
     padding: 50px;
 }
@@ -236,12 +222,23 @@ a{
 }
 
 .pp{
+
     line-height: 1;
     word-spacing: 3px;
-    margin-bottom: 30px;
     font-size: 40px;
     font-weight: normal;
     text-align: center;
+    color: rgb(110, 108, 108);
+}
+
+.pppp{
+    color: white;
+    line-height: 1;
+    word-spacing: 3px;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+   
 }
 
 .ssd{
@@ -309,6 +306,12 @@ color: white;
 
 
 /* LETS KEEP IT SECRET  */
+
+.inn{
+    padding: 20px;
+    width: 100%;
+    display: none;
+}
 
  .lets{
     display: flex;
@@ -389,11 +392,13 @@ gap: 30px;
 
 .ml{
     position: absolute;
-    bottom: 30%;
-    left: 35%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
     line-height: 2;
     text-align: center;
     color: white;
+    
 }
 
 .lolo{
@@ -494,11 +499,28 @@ button:hover{
 
 
 
-
 @media screen and (max-width:991px) {
 
+.inn{
+    display: block;
+}
+
+   .head{
+    padding:10px;
+   }
+
+.xcx{
+    font-size: 10px;
+}
+
+.ml{
+    width: 100%;
+}
+
     .menubtn{
-        display: block;
+        display:block;
+       
+
     
        
     }
@@ -560,6 +582,10 @@ button:hover{
     width: 100%;
    }
 
+   .rr{
+    margin-bottom: 20px;
+   }
+
    .ffr{
     display: block;
    }
@@ -600,9 +626,10 @@ margin-top: 20px;
     width: 100%;
    }
 
-   .ml{
-    display: none;
-}
+  .lolo{
+    font-size: 15px;
+  }
+
 
 a:hover,a:focus-within{
     transform: scale(1.2);
@@ -611,6 +638,20 @@ a:hover,a:focus-within{
 }
 
 @media screen and (max-width:600px) {
+
+
+    .dv{
+        width: 100px;
+        font-size: 10px;
+        text-align: center;
+        
+    }
+    
+
+    .lets{
+        padding: 10px;
+    }
+
 
     .aa{
         display: block;
@@ -626,11 +667,10 @@ a:hover,a:focus-within{
 
     .uu{
         width: 100%;
+        margin-bottom: 20px;
     }
 
-    .ml{
-        display: none;
-    }
+    
 
     .op{
         display: block;
@@ -647,6 +687,7 @@ a:hover,a:focus-within{
 
     .er{
         margin-top: 20px;
+        padding:5px;
     }
 
     .yy{
@@ -659,6 +700,7 @@ a:hover,a:focus-within{
 
     .to{
        line-height: 1;
+       margin-bottom: 10px;
       
     }
 }
