@@ -638,6 +638,15 @@ a:hover,a:focus-within{
     transform: scale(1.2);
     transition: all 0.5s;
 }
+
+.ex{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 20px;
+}
 }
 
 @media screen and (max-width:600px) {
@@ -688,14 +697,7 @@ gap: 10px;
         display: block;
     }
 
-    .ex{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-        font-size: 20px;
-    }
+    
 
     .er{
         margin-top: 20px;
